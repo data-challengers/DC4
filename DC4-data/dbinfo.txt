@@ -1,0 +1,9 @@
+### To combine CSV files ###
+In bash/zsh:
+$ head -1 one.csv > all_combined.csv
+$ tail -n +2 -q *.csv >> all_combined.csv
+
+### To write out DB ###
+Download script: https://github.com/rufuspollock/csv2sqlite/blob/master/csv2sqlite.py
+
+run: python csv2sqlite.py csv_path.csv new_db_path.db
